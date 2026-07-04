@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "micro-skansen-mcp"
+version = "0.1.0"
+description = "micro-skansen 전용 MCP 서버 — Cursor/Claude에서 프로젝트를 직접 제어"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=0.1.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+mcp-skansen = "src.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

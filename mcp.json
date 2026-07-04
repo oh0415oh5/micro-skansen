@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "micro-skansen": {
+      "command": "python3",
+      "args": ["src/server.py"],
+      "env": {}
+    }
+  }
+}
